@@ -10,6 +10,10 @@ public class matrixTest
         toString(mat);
         System.out.println("Major Diagonal length: 16. Calculated length: " + matrix.sumMajorDiagonal(mat));
         System.out.println("Minor Diagonal length: 17. Calculated length: " + matrix.sumMinorDiagonal(mat));
+        System.out.println();
+
+        mat = matrix.transpose(mat);
+        toString(mat);
     }
 
     public static void toString(double[][] matrix)

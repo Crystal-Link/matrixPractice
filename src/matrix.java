@@ -27,13 +27,19 @@ public class matrix
         return sum;
     }
 
-    //public static double[][] transpose(double[][] matrix)
+    public static double[][] transpose(double[][] matrix)
     {
+        double[][] newMatrix = new double[matrix[0].length][matrix.length];
 
+        for (int r = 0; r < matrix.length; r++)
+            for (int c = 0; c < matrix[0].length; c++)
+                newMatrix[c][r] = matrix[r][c];
+
+        return newMatrix;
     }
 
-    public static boolean isMatrix(double[][] matrix)
+    //public static boolean isMatrix(double[][] matrix)
     {
-        if()
+
     }
 }
